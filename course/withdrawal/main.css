@@ -1,0 +1,215 @@
+html {
+    font-size: 10px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    /* Firefox */
+}
+
+*, :after, :before {
+    box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    /* Firefox */
+}
+
+body {
+    font-family: -apple-system, "Helvetica Neue", "Helvetica", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", SimSun, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+ul, li, dd, dl {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p, ul, li, h1, h2, h3, h4, h5, h6, dl, dd, a {
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.main {
+    width: 1080px;
+    height: 1920px;
+    background: #fff url(../../public/bg.png)no-repeat center bottom;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header_info {
+    background: url(../../public/header.png)no-repeat center top;
+    height: 425px;
+    text-align: center;
+    color: #fff;
+    padding-top: 170px;
+}
+
+.header_info h5 {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.header_info p {
+    font-size: 43px;
+    text-transform: uppercase;
+}
+
+.center_info {
+    padding: 75px 95px 180px 95px;
+}
+
+.center_info li {
+    background: #fff;
+    box-shadow: 0 0 30px #ddd;
+    height: 128px;
+    line-height: 128px;
+    font-size: 40px;
+    color: #333;
+    margin: 20px 0;
+    border-radius: 8px;
+    text-align: left;
+    cursor: pointer;
+}
+.center_info  i{
+    font-style: normal;
+}
+
+.icon_info {
+    background: url(../icon.png)no-repeat left top;
+    width: 90px;
+    height: 70px;
+    float: left;
+    position: relative;
+    list-style: none;
+    left: 30px;
+    top: 35px;
+}
+
+.icon01 {
+    background-position-y: -239px;
+    padding-right: 150px;
+}
+
+.icon02 {
+    background-position-y: -167px;
+    padding-right: 150px;
+}
+
+.icon03 {
+    background-position-y: -84px;
+    ;
+    padding-right: 150px;
+}
+
+.icon04 {
+
+    background-position-y: bottom;
+    padding-right: 150px;
+}
+
+.icon05 {
+    background-position-y: -373px;
+    padding-right: 150px;
+}
+
+.icon06 {
+    background-position-y: -305px;
+    padding-right: 150px;
+}
+
+.icon07 {
+    background-position-y: -440px;
+    padding-right: 150px;
+}
+
+.icon08 {
+    background-position-y: top;
+    padding-right: 150px;
+}
+
+.shade {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: auto;
+    opacity: 1;
+    transition: opacity .8s;
+    display: none;
+}
+
+.open_win {
+    background: url(../../public/open_bg.png)no-repeat center top;
+    width: 858px;
+    height: 1357px;
+    position: fixed;
+    top: 208px;
+    left: 109px;
+    right: 109px;
+    z-index: 999;
+    margin: 0 auto;
+    display: none;
+}
+
+.win_title {
+    background: url(../../public/tip_bg.png)no-repeat left top;
+    height: 100px;
+    line-height: 100px;
+    text-align: left;
+    font-size: 48px;
+    color: #fff;
+    margin-top: 75px;
+    padding-left: 55px;
+}
+
+.close_icon {
+    background: url(../../public/close_btn.png)no-repeat left top;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 28px;
+    top: 28px;
+    cursor: pointer;
+}
+
+.win01 {
+    margin-top: 55px;
+    padding: 0 55px;
+    height: 970px;
+    overflow: scroll;
+}
+
+.win01 li {
+    text-align: left;
+}
+
+.win01 h6 {
+    font-size: 48px;
+    color: #ffc07c;
+    padding: 55px 0;
+}
+
+.win01 p {
+    font-size: 44px;
+    color: #333;
+}
+
+.win_1, .win_2, .win_3, .win_4, .win_5, .win_6, .win_7, .win_8 {
+    display: none;
+}
+
+
+
+
+
+/* ======================rebate=================================== */
+
+

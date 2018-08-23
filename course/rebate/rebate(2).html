@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <title>withdrawal_course</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header_info">
+            <h5>返水教程</h5>
+            <p>Backwater tutorial</p>
+        </div>
+        <div class="center_info">
+            <ul id="help_panel">
+                <li class="li_01"><i class="icon_info icon01"></i><a href="https://fs1.manbet1.tv" target="_bank">返水记录查询教程</a></li>
+                <li onclick="scrollGo('help_1');" class="li_02"><i class="icon_info icon02"></i>返水何时派发？</li>
+                <li onclick="scrollGo('help_2');" class="li_03"><i class="icon_info icon03"></i>返水派发的比例是多少？</li>
+                <li onclick="scrollGo('help_3');" class="li_04"><i class="icon_info icon04"></i>万博体育有流水限制吗？</li>
+                <li onclick="scrollGo('help_4');" class="li_05"><i class="icon_info icon05"></i>彩票有返水吗？</li>
+            </ul>
+
+        </div>
+        <div class="shade"></div>
+        <div id="parent" class="open_win">
+            <p class="win_title">返水教程
+                <span class="close_icon"></span>
+            </p>
+            <div id="help_detail" class="win01 win_1">
+                <ul>
+                    <li id="help_1">
+                        <h6>1.返水何时派发？</h6>
+                        <p>返水周期为日结，每日0点-次日0点为结算时间，最迟次日下午(北京时间18:00 pm)前系统自动派发、无需申请，只需一倍流水即可提款（不限游戏平台）</p>
+                    </li>
+                    <li id="help_2">
+                        <h6>2.返水派发的比例是多少？</h6>
+                        <p>返水金额一般泛指=自然有效投注额x返水比例=(日总有效投注额-任何存送优惠活动需要完成的有效投注额)x返水比例。
+                            <br/> 万博体育返水比例为0.4%-0.8%
+                            <br/> 真人娱乐返水比例为0.4-1.2%
+                            <br/> 与电子游戏为0.6%-1.2%
+                        </p>
+                    </li>
+                    <li id="help_3">
+                        <h6>3.万博体育有流水限制吗？</h6>
+                        <p>万博体育仅对已结算并产生输赢结果的投注额进行计算流水。任何走盘、取消的赛事、对押等(包括串关和单双)赔率低于欧洲盘1.70，香港盘0.70的投注将不计算在有效流水内。请您在投注时，尽量选择符合有效流水的内容进行投注，避免造成您的投注无法领取每日返水。</p>
+                    </li>
+                    <li id="help_4">
+                            <h6>4.彩票有返水吗？</h6>
+                            <p>由于我司目前相关新增彩票平台返奖率行业之最，暂时不提供有关返水，敬请谅解！</p>
+                        </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/index.js"></script>
+
+    <script>
+        function scrollGo(to_id) {
+            $(".shade").show();
+            $(".open_win").show();
+
+            $('#help_detail').animate({scrollTop: $('#help_detail').scrollTop() + $('#' + to_id).offset().top - $('#help_detail').offset().top}, 1000);
+            //$('#help_detail').animate({scrollTop: $('#' + to_id).offset().top}, 1000);
+            //console.log(to_id);
+            //console.log($('#' + to_id).offset().top);
+            //console.log($('#help_detail').scrollTop() + $('#' + to_id).offset().top - $('#help_detail').offset().top);
+        }
+    </script>
+</body>
+</html>

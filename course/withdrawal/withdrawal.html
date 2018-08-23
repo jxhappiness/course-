@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <title>withdrawal_course</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header_info">
+            <h5>取款教程</h5>
+            <p>Withdrawal tutorial</p>
+        </div>
+        <div class="center_info">
+            <ul id="help_panel">
+                <li onclick="scrollGo('help_1');return false;" class="li_01"><i class="icon_info icon01"></i>支持提款银行有哪些？</li>
+                <li onclick="scrollGo('help_2');return false;" class="li_02"><i class="icon_info icon02"></i>如何进行提款？</li>
+                <li onclick="scrollGo('help_3');return false;" class="li_03"><i class="icon_info icon03"></i>提款单笔限额和次数是多少？</li>
+                <li onclick="scrollGo('help_4');return false;" class="li_04"><i class="icon_info icon04"></i>提款时间是多久？</li>
+                <li onclick="scrollGo('help_5');return false;" class="li_05"><i class="icon_info icon05"></i>提款注意事项有哪些？</li>
+                <li onclick="scrollGo('help_6');return false;" class="li_06"><i class="icon_info icon06"></i>提款的条件是什么？</li>
+                <li onclick="scrollGo('help_7');return false;" class="li_07"><i class="icon_info icon07"></i>如果我的提款交易失败，我该怎么办?</li>
+                <li onclick="scrollGo('help_8');return false;" class="li_08"><i class="icon_info icon08"></i>可以绑定多张提款银行卡嘛？</li>
+            </ul>
+
+        </div>
+        <div class="shade"></div>
+        <div id="parent" class="open_win">
+            <p class="win_title">取款教程
+                <span class="close_icon"></span>
+            </p>
+            <div id="help_detail" class="win01 win_1">
+                <ul>
+                    <li id="help_1">
+                        <h6>1.支持提款银行有哪些？</h6>
+                        <p>我们网站支持的提款银行有：中国银行、中国工商银行、中国建设银行、中国农业银行、中国招商银行、中国交通银行、中国光大银行、中国邮政储蓄银行、平安银行、中国民生银行、浦发银行、广发银行、中国中信银行、华夏银行、兴业银行、南京银行、广州银行、长安银行、其他银行。</p>
+                    </li>
+                    <li id="help_2">
+                        <h6>2.如何进行提款？</h6>
+                        <p>登陆帐号后点击右上角的“取款”。
+                            <br/>进入页面后会有流水检测功能，会有提示打码量，完成打码量后输入下方取款金额，取款密码，如果未添加银行卡信息需要绑定银行卡，选择银行名称，输入开户姓名、开户账号、开户行，点击下方取款即可。</p>
+                    </li>
+                    <li id="help_3">
+                        <h6>3.提款单笔限额和次数是多少？</h6>
+                        <p>提款金额单笔最低100元最高5万，每天最多可提款5次，每日最高款25万。</p>
+                    </li>
+
+                    <li id="help_4">
+                        <h6>4.提款时间是多久？</h6>
+                        <p>一般取款时间是5-10分钟即可到账，如果长时间未到账请联系在线客服进行查询。</p>
+                    </li>
+
+                    <li id="help_5">
+                        <h6>5.提款注意事项有哪些？</h6>
+                        <p>提款绑定的银行卡姓名需与游戏账户的注册姓名一致。
+                            <br/> 存款需满足有效投注额要求后方可申请提款。
+                            <br/> 若您未申请任何红利优惠，满足1倍投注即可申请提款。
+                            <br/> 若申请首存红利，则需要满足优惠活动写明的有效投注额要求。
+                            <br/> 全天24小时都可进行提款申请。
+                        </p>
+                    </li>
+
+                    <li id="help_6">
+                        <h6>6.提款的条件是什么？</h6>
+                        <p>如果未申请优惠需要完成本金1倍有效投注即可提款，如果申请优惠需要完成优惠相应的有效投注即可提款，可以在网站页面或联系客服查询剩余流水额。</p>
+                    </li>
+
+                    <li id="help_7">
+                        <h6>7.如果我的提款交易失败，我该怎么办?</h6>
+                        <p>您可以询问客服，查询提款失败的原因。</p>
+                    </li>
+
+                    <li id="help_8">
+                        <h6>8.可以绑定多张提款银行卡嘛？</h6>
+                        <p>是可以绑定多张提款银行卡的，在账户中心选择取款银行卡，点击新增进行添加。</p>
+                    </li>
+                </ul>
+
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/index.js"></script>
+
+    <script>
+        function scrollGo(to_id) {
+            $(".shade").show();
+            $(".open_win").show();
+            $('#help_detail').animate({scrollTop: $('#help_detail').scrollTop() + $('#' + to_id).offset().top - $('#help_detail').offset().top}, 1000);
+        }
+    </script>
+
+
+
+</body>
+
+</html>
